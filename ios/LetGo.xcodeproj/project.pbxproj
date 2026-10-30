@@ -10,8 +10,10 @@
 		00FFFF311454216C284F0044 /* LetGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C332E272B4A23E00E1E62A8 /* LetGoApp.swift */; };
 		07431BF690B8DB050CB902EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993A5F323A0AB4264AE335D3 /* Assets.xcassets */; };
 		12219E0397A84C8E7E016F6A /* LaunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F3822E6E96C96F8F325D26 /* LaunchUITests.swift */; };
+		1A2A927D8655DB6D4CE010BF /* WordLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */; };
 		76FD728A578BAD02B0C7E6AF /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126E6D84346C685E55240C1 /* LocalizationTests.swift */; };
 		9B0F9F8A8C2FBBBF5910F389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D82C4BCE240F64379DA871 /* ContentView.swift */; };
+		AD0B512E82883509E825B4D7 /* WordLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8682679A0A24813BC0F0E8 /* WordLayout.swift */; };
 		B5C99BF06164776A1225754A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */; };
 		F29CC186620956923345E03B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */; };
 		FA1439601935E1767F921FC0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3CB210FDB7821CA755DB250A /* Localizable.xcstrings */; };
@@ -35,11 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLayoutTests.swift; sourceTree = "<group>"; };
 		3C332E272B4A23E00E1E62A8 /* LetGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetGoApp.swift; sourceTree = "<group>"; };
 		3CB210FDB7821CA755DB250A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		4FB91494F28A412929FE05B6 /* LetGo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LetGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		6E8682679A0A24813BC0F0E8 /* WordLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLayout.swift; sourceTree = "<group>"; };
 		8126E6D84346C685E55240C1 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
 		993A5F323A0AB4264AE335D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A29D69BF36247A3EA8A2B7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -94,14 +98,24 @@
 				A29D69BF36247A3EA8A2B7E0 /* Info.plist */,
 				634C9D92E47C64916B1EF69F /* App */,
 				9BEB3C6453230146D92DB95B /* Resources */,
+				B5ACB386B69A860436FD0152 /* Words */,
 			);
 			path = LetGo;
+			sourceTree = "<group>";
+		};
+		B5ACB386B69A860436FD0152 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				6E8682679A0A24813BC0F0E8 /* WordLayout.swift */,
+			);
+			path = Words;
 			sourceTree = "<group>";
 		};
 		CB0298F4D23CBE2D29168CF4 /* LetGoTests */ = {
 			isa = PBXGroup;
 			children = (
 				8126E6D84346C685E55240C1 /* LocalizationTests.swift */,
+				2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */,
 			);
 			path = LetGoTests;
 			sourceTree = "<group>";
@@ -237,6 +251,7 @@
 			files = (
 				9B0F9F8A8C2FBBBF5910F389 /* ContentView.swift in Sources */,
 				00FFFF311454216C284F0044 /* LetGoApp.swift in Sources */,
+				AD0B512E82883509E825B4D7 /* WordLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FD728A578BAD02B0C7E6AF /* LocalizationTests.swift in Sources */,
+				1A2A927D8655DB6D4CE010BF /* WordLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
