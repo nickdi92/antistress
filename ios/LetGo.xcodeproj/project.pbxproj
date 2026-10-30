@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FFFF311454216C284F0044 /* LetGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C332E272B4A23E00E1E62A8 /* LetGoApp.swift */; };
+		026D45EE6EE0A90C25494BE4 /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27911710A3DDFE189E08C72B /* SoundEngine.swift */; };
+		07431BF690B8DB050CB902EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993A5F323A0AB4264AE335D3 /* Assets.xcassets */; };
+		0D863772A96FCEEFCB719890 /* BreathCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18E91C0BD31516A3211B8A /* BreathCircle.swift */; };
+		1A2A927D8655DB6D4CE010BF /* WordLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */; };
+		1ECD41D151E68DB294320DCF /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B7295B2DD1BD3B26D25C7 /* SoundButton.swift */; };
+		24A15D516944368A22783C9F /* SinkingWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5592EF8C1796FFCC1BBA3FA /* SinkingWordTests.swift */; };
+		26EC5434A116C6ECFB3850E1 /* StoreScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D58AFB7982F645D6016B6C /* StoreScreenshotTests.swift */; };
+		3607BEC29F4762DA9CC2969C /* AfterSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293695DBAE078954FF43A807 /* AfterSequence.swift */; };
+		495437FCC20543DA4BEEAF36 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67678951F6E5D7F87235C5 /* WriteView.swift */; };
+		4C98E0D5F833F17F6F98BAA3 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D377DBB5498DA97D1327796 /* Haptics.swift */; };
+		4F6A47A7F9C9EBD3AF3236AF /* SinkingWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17543B87BEC48B7CBE3272 /* SinkingWord.swift */; };
+		6199346BAB488BA6589567D6 /* AfterSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E23CC7C30459AA335E4DF1 /* AfterSequenceTests.swift */; };
+		76FD728A578BAD02B0C7E6AF /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126E6D84346C685E55240C1 /* LocalizationTests.swift */; };
+		8491268DA8226C71E2AECAF8 /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04034CFFD558082DDB60B855 /* WaterView.swift */; };
+		8A266D49CDD8A4BDBF81FDEB /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E18B4DBA31F928CE01C844 /* Synth.swift */; };
+		98E333D9508F7B9F240EB90E /* AfterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35BBA7D64A787591F0C81F /* AfterView.swift */; };
+		9B03EFD8ECF007E9F5BCF70A /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CDAC4F73A4476AB998D1B /* Easing.swift */; };
+		9B0F9F8A8C2FBBBF5910F389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D82C4BCE240F64379DA871 /* ContentView.swift */; };
+		9B95B68CA6BB5DF9F2AB9A90 /* SoundEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C378C0FD57B59E2E48AFA73A /* SoundEngineTests.swift */; };
+		AD0B512E82883509E825B4D7 /* WordLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8682679A0A24813BC0F0E8 /* WordLayout.swift */; };
+		B2C88892D13AA9B606A0AFA6 /* WaterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D493ADD59D3A7D3A9FF8D8 /* WaterScene.swift */; };
+		B5C99BF06164776A1225754A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */; };
+		C37E557ACFDECC1AF10FF118 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD314543254AA216DDBC4C2E /* Theme.swift */; };
+		CAB0FD03A4D539602DAC91BE /* FlowModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0532A08FD0C77A3C037375AC /* FlowModelTests.swift */; };
+		D551C789B94EB4BEFBAC5601 /* FlowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF492AD5A5C0A4129304A3 /* FlowModel.swift */; };
+		D64D903A8DECD3534CF5DAC2 /* SeededRNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72AB018DF93C1014D8D8697 /* SeededRNG.swift */; };
+		EE82C3F0E95F761C2CEA9D7F /* FlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2656E7157E6BBEE821F094 /* FlowUITests.swift */; };
+		F29CC186620956923345E03B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */; };
+		F4AACFE956A548488D1CB8CF /* WaterSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8FDC1EE89E5BBCD0A2EEEA /* WaterSceneTests.swift */; };
+		F9CD1A3435A1E7204AC17369 /* SynthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF7982C53ECC5406A4AF74 /* SynthTests.swift */; };
+		FA1439601935E1767F921FC0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3CB210FDB7821CA755DB250A /* Localizable.xcstrings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43E2A7363C1273D5978CE9D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C585C2EAF3AFE08BBC4A5BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7F99E75AA17D1C85C3874F3;
+			remoteInfo = LetGo;
+		};
+		ACE9D5005352DB4B9C3AEF73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C585C2EAF3AFE08BBC4A5BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7F99E75AA17D1C85C3874F3;
+			remoteInfo = LetGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04034CFFD558082DDB60B855 /* WaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterView.swift; sourceTree = "<group>"; };
+		0532A08FD0C77A3C037375AC /* FlowModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowModelTests.swift; sourceTree = "<group>"; };
+		0A67678951F6E5D7F87235C5 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		1A0CDAC4F73A4476AB998D1B /* Easing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		27911710A3DDFE189E08C72B /* SoundEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEngine.swift; sourceTree = "<group>"; };
+		27E23CC7C30459AA335E4DF1 /* AfterSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSequenceTests.swift; sourceTree = "<group>"; };
+		293695DBAE078954FF43A807 /* AfterSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSequence.swift; sourceTree = "<group>"; };
+		2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLayoutTests.swift; sourceTree = "<group>"; };
+		3C332E272B4A23E00E1E62A8 /* LetGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetGoApp.swift; sourceTree = "<group>"; };
+		3CB210FDB7821CA755DB250A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		41CF492AD5A5C0A4129304A3 /* FlowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowModel.swift; sourceTree = "<group>"; };
+		4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4FB91494F28A412929FE05B6 /* LetGo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LetGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		6A8FDC1EE89E5BBCD0A2EEEA /* WaterSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSceneTests.swift; sourceTree = "<group>"; };
+		6E8682679A0A24813BC0F0E8 /* WordLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLayout.swift; sourceTree = "<group>"; };
+		711B7295B2DD1BD3B26D25C7 /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
+		73E18B4DBA31F928CE01C844 /* Synth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
+		8126E6D84346C685E55240C1 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
+		88D493ADD59D3A7D3A9FF8D8 /* WaterScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterScene.swift; sourceTree = "<group>"; };
+		8A18E91C0BD31516A3211B8A /* BreathCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathCircle.swift; sourceTree = "<group>"; };
+		8D377DBB5498DA97D1327796 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		993A5F323A0AB4264AE335D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A29D69BF36247A3EA8A2B7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A72AB018DF93C1014D8D8697 /* SeededRNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeededRNG.swift; sourceTree = "<group>"; };
+		AD17543B87BEC48B7CBE3272 /* SinkingWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinkingWord.swift; sourceTree = "<group>"; };
+		B3AF7982C53ECC5406A4AF74 /* SynthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthTests.swift; sourceTree = "<group>"; };
+		BAC10E2BB450FFE87D7C46DE /* LetGoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LetGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C378C0FD57B59E2E48AFA73A /* SoundEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEngineTests.swift; sourceTree = "<group>"; };
+		C5592EF8C1796FFCC1BBA3FA /* SinkingWordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinkingWordTests.swift; sourceTree = "<group>"; };
+		DD314543254AA216DDBC4C2E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E8D82C4BCE240F64379DA871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE20365EF84FAD24F4D61F86 /* LetGoUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LetGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D58AFB7982F645D6016B6C /* StoreScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreScreenshotTests.swift; sourceTree = "<group>"; };
+		FB35BBA7D64A787591F0C81F /* AfterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterView.swift; sourceTree = "<group>"; };
+		FD2656E7157E6BBEE821F094 /* FlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0F16DE036ACAA60D9D3B8CFC /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				27911710A3DDFE189E08C72B /* SoundEngine.swift */,
+				73E18B4DBA31F928CE01C844 /* Synth.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		20621963DED4D5789F086E8D /* LetGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD2656E7157E6BBEE821F094 /* FlowUITests.swift */,
+				F9D58AFB7982F645D6016B6C /* StoreScreenshotTests.swift */,
+			);
+			path = LetGoUITests;
+			sourceTree = "<group>";
+		};
+		32BA20CA40A0EC6D3654F3EE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A72AB018DF93C1014D8D8697 /* SeededRNG.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		3DB4A9AFB3278DCBBC67188F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1A0CDAC4F73A4476AB998D1B /* Easing.swift */,
+				8D377DBB5498DA97D1327796 /* Haptics.swift */,
+				DD314543254AA216DDBC4C2E /* Theme.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		418F174B49D9C019AD6371DF /* Water */ = {
+			isa = PBXGroup;
+			children = (
+				88D493ADD59D3A7D3A9FF8D8 /* WaterScene.swift */,
+				04034CFFD558082DDB60B855 /* WaterView.swift */,
+			);
+			path = Water;
+			sourceTree = "<group>";
+		};
+		573BB603F842A59D7E7A55A3 = {
+			isa = PBXGroup;
+			children = (
+				B199B2E3CB6A5B3605FE6789 /* LetGo */,
+				CB0298F4D23CBE2D29168CF4 /* LetGoTests */,
+				20621963DED4D5789F086E8D /* LetGoUITests */,
+				D99B8CE6D9D1E54B45924E92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		634C9D92E47C64916B1EF69F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E8D82C4BCE240F64379DA871 /* ContentView.swift */,
+				3C332E272B4A23E00E1E62A8 /* LetGoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80EDE8DDF2A84A30F3FE9B46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB35BBA7D64A787591F0C81F /* AfterView.swift */,
+				8A18E91C0BD31516A3211B8A /* BreathCircle.swift */,
+				711B7295B2DD1BD3B26D25C7 /* SoundButton.swift */,
+				0A67678951F6E5D7F87235C5 /* WriteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9BEB3C6453230146D92DB95B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				993A5F323A0AB4264AE335D3 /* Assets.xcassets */,
+				670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */,
+				3CB210FDB7821CA755DB250A /* Localizable.xcstrings */,
+				4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D07923664BA958F994503EF /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				293695DBAE078954FF43A807 /* AfterSequence.swift */,
+				41CF492AD5A5C0A4129304A3 /* FlowModel.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		B199B2E3CB6A5B3605FE6789 /* LetGo */ = {
+			isa = PBXGroup;
+			children = (
+				A29D69BF36247A3EA8A2B7E0 /* Info.plist */,
+				634C9D92E47C64916B1EF69F /* App */,
+				0F16DE036ACAA60D9D3B8CFC /* Audio */,
+				9D07923664BA958F994503EF /* Flow */,
+				9BEB3C6453230146D92DB95B /* Resources */,
+				3DB4A9AFB3278DCBBC67188F /* Support */,
+				80EDE8DDF2A84A30F3FE9B46 /* Views */,
+				418F174B49D9C019AD6371DF /* Water */,
+				B5ACB386B69A860436FD0152 /* Words */,
+			);
+			path = LetGo;
+			sourceTree = "<group>";
+		};
+		B5ACB386B69A860436FD0152 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				AD17543B87BEC48B7CBE3272 /* SinkingWord.swift */,
+				6E8682679A0A24813BC0F0E8 /* WordLayout.swift */,
+			);
+			path = Words;
+			sourceTree = "<group>";
+		};
+		CB0298F4D23CBE2D29168CF4 /* LetGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				27E23CC7C30459AA335E4DF1 /* AfterSequenceTests.swift */,
+				0532A08FD0C77A3C037375AC /* FlowModelTests.swift */,
+				8126E6D84346C685E55240C1 /* LocalizationTests.swift */,
+				C5592EF8C1796FFCC1BBA3FA /* SinkingWordTests.swift */,
+				C378C0FD57B59E2E48AFA73A /* SoundEngineTests.swift */,
+				B3AF7982C53ECC5406A4AF74 /* SynthTests.swift */,
+				6A8FDC1EE89E5BBCD0A2EEEA /* WaterSceneTests.swift */,
+				2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */,
+				32BA20CA40A0EC6D3654F3EE /* Support */,
+			);
+			path = LetGoTests;
+			sourceTree = "<group>";
+		};
+		D99B8CE6D9D1E54B45924E92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FB91494F28A412929FE05B6 /* LetGo.app */,
+				BAC10E2BB450FFE87D7C46DE /* LetGoTests.xctest */,
+				EE20365EF84FAD24F4D61F86 /* LetGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52FAA8CA28ADB91ED7FF3DB1 /* LetGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83945734D0924AF495114E84 /* Build configuration list for PBXNativeTarget "LetGoTests" */;
+			buildPhases = (
+				86AC533B571B852A1D7B958F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0BAC7F0337624AC30C67AD3 /* PBXTargetDependency */,
+			);
+			name = LetGoTests;
+			packageProductDependencies = (
+			);
+			productName = LetGoTests;
+			productReference = BAC10E2BB450FFE87D7C46DE /* LetGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7F99E75AA17D1C85C3874F3 /* LetGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 059F1CBD6395C4C8CE2EF95E /* Build configuration list for PBXNativeTarget "LetGo" */;
+			buildPhases = (
+				18CF24795FFA60AD4F509052 /* Sources */,
+				E6D332A89FE0FDFAAD73950F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetGo;
+			packageProductDependencies = (
+			);
+			productName = LetGo;
+			productReference = 4FB91494F28A412929FE05B6 /* LetGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F29AD0669869A37E62712001 /* LetGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D868500DB67BA3BE5FF5FB7 /* Build configuration list for PBXNativeTarget "LetGoUITests" */;
+			buildPhases = (
+				3DCB3801F973214409FA1BC7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B234051DACC22C1754048DBD /* PBXTargetDependency */,
+			);
+			name = LetGoUITests;
+			packageProductDependencies = (
+			);
+			productName = LetGoUITests;
+			productReference = EE20365EF84FAD24F4D61F86 /* LetGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C585C2EAF3AFE08BBC4A5BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					52FAA8CA28ADB91ED7FF3DB1 = {
+						ProvisioningStyle = Automatic;
+					};
+					E7F99E75AA17D1C85C3874F3 = {
+						ProvisioningStyle = Automatic;
+					};
+					F29AD0669869A37E62712001 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = E7F99E75AA17D1C85C3874F3;
+					};
+				};
+			};
+			buildConfigurationList = E09549C2E560EF536CFACDD6 /* Build configuration list for PBXProject "LetGo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				it,
+			);
+			mainGroup = 573BB603F842A59D7E7A55A3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D99B8CE6D9D1E54B45924E92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7F99E75AA17D1C85C3874F3 /* LetGo */,
+				52FAA8CA28ADB91ED7FF3DB1 /* LetGoTests */,
+				F29AD0669869A37E62712001 /* LetGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6D332A89FE0FDFAAD73950F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07431BF690B8DB050CB902EB /* Assets.xcassets in Resources */,
+				B5C99BF06164776A1225754A /* InfoPlist.xcstrings in Resources */,
+				FA1439601935E1767F921FC0 /* Localizable.xcstrings in Resources */,
+				F29CC186620956923345E03B /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18CF24795FFA60AD4F509052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3607BEC29F4762DA9CC2969C /* AfterSequence.swift in Sources */,
+				98E333D9508F7B9F240EB90E /* AfterView.swift in Sources */,
+				0D863772A96FCEEFCB719890 /* BreathCircle.swift in Sources */,
+				9B0F9F8A8C2FBBBF5910F389 /* ContentView.swift in Sources */,
+				9B03EFD8ECF007E9F5BCF70A /* Easing.swift in Sources */,
+				D551C789B94EB4BEFBAC5601 /* FlowModel.swift in Sources */,
+				4C98E0D5F833F17F6F98BAA3 /* Haptics.swift in Sources */,
+				00FFFF311454216C284F0044 /* LetGoApp.swift in Sources */,
+				4F6A47A7F9C9EBD3AF3236AF /* SinkingWord.swift in Sources */,
+				1ECD41D151E68DB294320DCF /* SoundButton.swift in Sources */,
+				026D45EE6EE0A90C25494BE4 /* SoundEngine.swift in Sources */,
+				8A266D49CDD8A4BDBF81FDEB /* Synth.swift in Sources */,
+				C37E557ACFDECC1AF10FF118 /* Theme.swift in Sources */,
+				B2C88892D13AA9B606A0AFA6 /* WaterScene.swift in Sources */,
+				8491268DA8226C71E2AECAF8 /* WaterView.swift in Sources */,
+				AD0B512E82883509E825B4D7 /* WordLayout.swift in Sources */,
+				495437FCC20543DA4BEEAF36 /* WriteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCB3801F973214409FA1BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE82C3F0E95F761C2CEA9D7F /* FlowUITests.swift in Sources */,
+				26EC5434A116C6ECFB3850E1 /* StoreScreenshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86AC533B571B852A1D7B958F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6199346BAB488BA6589567D6 /* AfterSequenceTests.swift in Sources */,
+				CAB0FD03A4D539602DAC91BE /* FlowModelTests.swift in Sources */,
+				76FD728A578BAD02B0C7E6AF /* LocalizationTests.swift in Sources */,
+				D64D903A8DECD3534CF5DAC2 /* SeededRNG.swift in Sources */,
+				24A15D516944368A22783C9F /* SinkingWordTests.swift in Sources */,
+				9B95B68CA6BB5DF9F2AB9A90 /* SoundEngineTests.swift in Sources */,
+				F9CD1A3435A1E7204AC17369 /* SynthTests.swift in Sources */,
+				F4AACFE956A548488D1CB8CF /* WaterSceneTests.swift in Sources */,
+				1A2A927D8655DB6D4CE010BF /* WordLayoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B234051DACC22C1754048DBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7F99E75AA17D1C85C3874F3 /* LetGo */;
+			targetProxy = 43E2A7363C1273D5978CE9D7 /* PBXContainerItemProxy */;
+		};
+		C0BAC7F0337624AC30C67AD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7F99E75AA17D1C85C3874F3 /* LetGo */;
+			targetProxy = ACE9D5005352DB4B9C3AEF73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17A8309DF3DF54D2D283805A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetGo.app/LetGo";
+			};
+			name = Debug;
+		};
+		21B1F6494F9540B678A1C65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetGo.app/LetGo";
+			};
+			name = Release;
+		};
+		60F142D8380023930EBCFB86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6BE46E7E51F6AAC5F7C03D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LetGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo;
+				PRODUCT_NAME = LetGo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7895DF5411856D954E7A407A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9ECA8DAEEFF70E790DE9DAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LetGo;
+			};
+			name = Debug;
+		};
+		DF8A8EB63ACE2DD9A2922F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LetGo;
+			};
+			name = Release;
+		};
+		EC9B9EC865EF7F2C980A8326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LetGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo;
+				PRODUCT_NAME = LetGo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		059F1CBD6395C4C8CE2EF95E /* Build configuration list for PBXNativeTarget "LetGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9B9EC865EF7F2C980A8326 /* Debug */,
+				6BE46E7E51F6AAC5F7C03D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5D868500DB67BA3BE5FF5FB7 /* Build configuration list for PBXNativeTarget "LetGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECA8DAEEFF70E790DE9DAEB /* Debug */,
+				DF8A8EB63ACE2DD9A2922F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83945734D0924AF495114E84 /* Build configuration list for PBXNativeTarget "LetGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A8309DF3DF54D2D283805A /* Debug */,
+				21B1F6494F9540B678A1C65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E09549C2E560EF536CFACDD6 /* Build configuration list for PBXProject "LetGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F142D8380023930EBCFB86 /* Debug */,
+				7895DF5411856D954E7A407A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C585C2EAF3AFE08BBC4A5BB /* Project object */;
+}
