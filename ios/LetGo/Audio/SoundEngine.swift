@@ -144,15 +144,20 @@ final class SoundEngine {
         }
     }
 
+    /// Takes the queued voices. Runs on the audio thread, so an empty queue must not touch the allocator.
+    nonisolated static func drain(_ pending: OSAllocatedUnfairLock<[NoteVoice]>) -> [NoteVoice] {
+        pending.withLock { queued in
+            guard !queued.isEmpty else { return [] }
+            defer { queued = [] }
+            return queued
+        }
+    }
+
     /// Sums the active note voices; new ones arrive through `pending`.
     private nonisolated static func makeVoicesNode(pending: OSAllocatedUnfairLock<[NoteVoice]>) -> AVAudioSourceNode {
         var active: [NoteVoice] = []
         return AVAudioSourceNode { _, _, frameCount, audioBufferList in
-            let queued = pending.withLock { queued in
-                defer { queued.removeAll(keepingCapacity: true) }
-                return queued
-            }
-            active.append(contentsOf: queued)
+            active.append(contentsOf: drain(pending))
             let buffers = UnsafeMutableAudioBufferListPointer(audioBufferList)
             for frame in 0..<Int(frameCount) {
                 var sample: Float = 0

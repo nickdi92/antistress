@@ -68,4 +68,23 @@ struct SinkingWordTests {
         let w = SinkingWord(word: word, dx: 10, dy: 8, rotation: 0.1, duration: 3, sinkAt: 1.4, startedAt: 0, isDone: false)
         #expect(w.appearance(now: 0.05, sinceRelease: 5, index: 0, reduceMotion: false).blur == 0)
     }
+
+    func sinking(_ sinkAt: Double) -> SinkingWord {
+        SinkingWord(word: word, dx: 0, dy: 0, rotation: 0, duration: 2, sinkAt: sinkAt, startedAt: nil, isDone: false)
+    }
+
+    @Test func onTimeWordIsAudible() {
+        #expect(SinkingWord.audible([sinking(1.4)], releasedAt: 10, now: 11.42).count == 1)
+    }
+
+    // back from the background, every overdue word starts in the same frame: no burst of notes
+    @Test func lateWordsStaySilent() {
+        let overdue = (0..<50).map { sinking(1.4 + Double($0) * 0.16) }
+        #expect(SinkingWord.audible(overdue, releasedAt: 0, now: 100).isEmpty)
+    }
+
+    @Test func atMostTwoPerFrame() {
+        let together = Array(repeating: sinking(1.4), count: 5)
+        #expect(SinkingWord.audible(together, releasedAt: 0, now: 1.45).count == 2)
+    }
 }

@@ -86,7 +86,8 @@ Se ti dichiari trader, indirizzo, telefono ed email diventano pubblici sullo Sto
    - [ ] scrivi qualcosa, poi apri il selettore delle app: si vede solo l'acqua, non il testo;
    - [ ] durante il respiro vai alla Home e torna: l'app prosegue senza bloccarsi e l'audio riparte;
    - [ ] con Impostazioni → Accessibilità → Movimento → Riduci movimento, le parole affondano senza deriva né sfocatura;
-   - [ ] con l'iPhone in italiano l'app è in italiano e sulla Home si chiama "Lascia andare".
+   - [ ] con l'iPhone in italiano l'app è in italiano e sulla Home si chiama "Lascia andare";
+   - [ ] con un testo lungo (vicino ai 600 caratteri) le parole affondano in modo fluido, senza scatti.
 
 ## 8. Compilare la scheda dello Store
 
@@ -100,12 +101,19 @@ App Store Connect → la tua app → **Distribuzione** (Distribution) → versio
 3. In alto a destra, menu della lingua → **Aggiungi lingua** → **Italiano**, e ripeti con `ios/store/it/` e
    `ios/store/screenshots/it/`. Nome in italiano: **Lascia andare** (o **Lascia andare: respira** se preso).
 4. **Informazioni app** (App Information): categoria principale **Salute e fitness**, secondaria **Stile di vita**;
-   diritti sui contenuti: nessun contenuto di terze parti; copyright `2026 Nome Cognome`.
-5. **Classificazione per età** (Age Rating): rispondi **No/Nessuno** a tutto.
+   diritti sui contenuti: nessun contenuto di terze parti.
+   Il campo **Copyright** è invece nella pagina della versione 1.0 (sezione Informazioni generali):
+   `2026 Nome Cognome`.
+5. **Classificazione per età** (Age Rating): leggi ogni domanda, il questionario è cambiato nel 2025. Per questa app
+   la risposta è **No / Nessuno** quasi ovunque: niente violenza, contenuti per adulti, gioco d'azzardo, chat,
+   contenuti degli utenti condivisi, pubblicità, acquisti. Se c'è una domanda su temi di salute o benessere,
+   tieni presente che l'app non dà consigli medici né informazioni sanitarie.
 6. **Privacy dell'app** (App Privacy): URL privacy `https://nickdi92.github.io/antistress/privacy.html`;
    "Raccogli dati da questa app?" → **No** → risulta **Dati non raccolti** (Data Not Collected).
+   Poi premi **Pubblica** (Publish) in alto a destra, altrimenti l'invio a revisione resta bloccato.
 7. **Prezzi e disponibilità** (Pricing and Availability): **Gratis**; disponibilità: tutti i paesi tranne
-   **Cina continentale**.
+   **Cina continentale**. Nella stessa pagina togli la spunta a **Mac con Apple silicon** e **Apple Vision Pro**
+   (sono attivi di default, ma l'app è pensata solo per iPhone).
 
 ## 9. Inviare a revisione
 

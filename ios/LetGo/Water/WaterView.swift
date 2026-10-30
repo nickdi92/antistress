@@ -19,8 +19,11 @@ final class WaterController {
         let dt = min(t - (previous ?? t), 0.05)
         previous = t
         scene.step(dt: dt)
-        for word in model.advance(now: t) {
+        let started = model.advance(now: t)
+        for word in started {
             scene.addRipple(x: word.word.x, y: word.word.y, size: clamp(word.word.width / 70, 0.6, 1.4))
+        }
+        for _ in SinkingWord.audible(started, releasedAt: model.releasedAt, now: t) {
             sound.drop()
             Haptics.drop()
         }

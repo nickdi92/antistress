@@ -6,6 +6,8 @@ struct WriteView: View {
     @Binding var fieldFrame: CGRect
     let screenSize: CGSize
     var onRelease: () -> Void
+    /// What the field shows. Trimming it (not the model) is what makes the field drop the extra characters.
+    @State private var draft = ""
 
     var body: some View {
         VStack(spacing: 0) {
@@ -15,7 +17,7 @@ struct WriteView: View {
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 18)
 
-            TextField("", text: $model.text,
+            TextField("", text: $draft,
                       prompt: Text("Write it here. No one will read it.").font(Theme.serifItalic(22)).foregroundStyle(Theme.inkFaint),
                       axis: .vertical)
                 .font(Theme.serif(22))
@@ -36,6 +38,17 @@ struct WriteView: View {
                 .onGeometryChange(for: CGRect.self) { $0.frame(in: .global) } action: { fieldFrame = $0 }
                 .accessibilityIdentifier("thoughtField")
                 .accessibilityLabel(Text("The thought to let go of"))
+                .onChange(of: draft) { _, text in
+                    if text.count > FlowModel.maxLength {
+                        draft = String(text.prefix(FlowModel.maxLength))
+                    } else {
+                        model.text = text
+                    }
+                }
+                .onChange(of: model.text) { _, text in
+                    // the model clears the text once it has sunk
+                    if text != draft { draft = text }
+                }
 
             Button("Let go", action: onRelease)
                 .buttonStyle(PillButtonStyle())

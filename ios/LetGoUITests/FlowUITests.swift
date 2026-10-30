@@ -83,4 +83,10 @@ final class FlowUITests: XCTestCase {
         releaseButton.tap()
         XCTAssertTrue(againButton.waitForExistence(timeout: 60))
     }
+
+    func testTypingStopsAt600Characters() {
+        launch("en")
+        write(String(repeating: "x", count: 620))
+        XCTAssertEqual((field.value as? String)?.count, 600)
+    }
 }

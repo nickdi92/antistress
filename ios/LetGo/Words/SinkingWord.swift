@@ -46,6 +46,12 @@ struct SinkingWord: Equatable {
         }
     }
 
+    /// The words that get a note and a haptic tick this frame: only those starting on time (after a pause
+    /// in the background all the overdue words start together and would sound as one loud chord), at most `limit`.
+    static func audible(_ started: [SinkingWord], releasedAt: Double, now: Double, limit: Int = 2) -> [SinkingWord] {
+        Array(started.filter { now - releasedAt - $0.sinkAt <= 0.25 }.prefix(limit))
+    }
+
     func appearance(now: Double, sinceRelease: Double, index: Int, reduceMotion: Bool) -> WordAppearance {
         let e = startedAt.map { clamp((now - $0) / duration, 0, 1) } ?? 0
         let ee = Easing.inOut(e)
