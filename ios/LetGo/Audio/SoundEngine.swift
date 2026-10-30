@@ -148,10 +148,11 @@ final class SoundEngine {
     private nonisolated static func makeVoicesNode(pending: OSAllocatedUnfairLock<[NoteVoice]>) -> AVAudioSourceNode {
         var active: [NoteVoice] = []
         return AVAudioSourceNode { _, _, frameCount, audioBufferList in
-            pending.withLock { queued in
-                active.append(contentsOf: queued)
-                queued.removeAll(keepingCapacity: true)
+            let queued = pending.withLock { queued in
+                defer { queued.removeAll(keepingCapacity: true) }
+                return queued
             }
+            active.append(contentsOf: queued)
             let buffers = UnsafeMutableAudioBufferListPointer(audioBufferList)
             for frame in 0..<Int(frameCount) {
                 var sample: Float = 0
