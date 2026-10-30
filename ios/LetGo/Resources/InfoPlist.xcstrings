@@ -1,22 +1,35 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "CFBundleDisplayName": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Let Go"
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "Bundle display name",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let Go"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lascia andare"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascia andare"
+          }
+        }
+      }
+    },
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "LetGo"
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

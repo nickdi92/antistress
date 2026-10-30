@@ -35,9 +35,9 @@ Apple controlla che i due link funzionino. Le pagine sono nel repo e GitHub Page
 4. Lascia attivo **Automatically manage signing** e scegli il tuo **Team** (il tuo nome, *non* "Personal Team").
    Il bundle ID `io.github.nickdi92.letgo` è già impostato.
 
-> Il progetto si rigenera con `xcodegen generate` partendo da `ios/project.yml`. Se un giorno lo rigeneri,
-> il Team scelto in Xcode si perde: aggiungi in `project.yml`, sotto `settings: base:`, la riga
-> `DEVELOPMENT_TEAM: <Team ID>` (il Team ID è su developer.apple.com → Account → Membership details).
+> Il Team è già fissato in `ios/project.yml` (`DEVELOPMENT_TEAM: Q49BV4AQWL`), quindi resta anche quando il
+> progetto si rigenera con `xcodegen generate`. Per una nuova app copia la stessa riga: il Team ID è su
+> developer.apple.com → Account → Membership details.
 
 ## 3. Provarla sul tuo iPhone (via cavo)
 

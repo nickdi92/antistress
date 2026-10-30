@@ -1,198 +1,206 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "Gone.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gone."
+  "sourceLanguage" : "en",
+  "strings" : {
+    "breathe in" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "breathe in"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Andato."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "inspira"
           }
         }
       }
     },
-    "Let go": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Let go"
+    "breathe out" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "breathe out"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lascia andare"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "espira"
           }
         }
       }
     },
-    "Nothing is saved or sent. It stays here a moment, then it's gone.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nothing is saved or sent. It stays here a moment, then it's gone."
+    "Gone." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gone."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Niente viene salvato né inviato. Resta qui un momento, poi se ne va."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Andato."
           }
         }
       }
     },
-    "One slow breath.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "One slow breath."
+    "Let go" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let go"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Un respiro lento."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascia andare"
           }
         }
       }
     },
-    "Sound off: tap to turn on": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sound off: tap to turn on"
+    "Nothing is saved or sent. It stays here a moment, then it's gone." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nothing is saved or sent. It stays here a moment, then it's gone."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Suono spento: tocca per attivare"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niente viene salvato né inviato. Resta qui un momento, poi se ne va."
           }
         }
       }
     },
-    "Sound on: tap to turn off": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sound on: tap to turn off"
+    "One slow breath." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One slow breath."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Suono attivo: tocca per spegnere"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un respiro lento."
           }
         }
       }
     },
-    "The thought to let go of": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "The thought to let go of"
+    "Sound off: tap to turn on" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sound off: tap to turn on"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Il pensiero da lasciare andare"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suono spento: tocca per attivare"
           }
         }
       }
     },
-    "What's weighing on you right now?": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "What's weighing on you right now?"
+    "Sound on: tap to turn off" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sound on: tap to turn off"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cosa ti pesa, adesso?"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suono attivo: tocca per spegnere"
           }
         }
       }
     },
-    "Write another thought": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Write another thought"
+    "The thought to let go of" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The thought to let go of"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scrivi un altro pensiero"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il pensiero da lasciare andare"
           }
         }
       }
     },
-    "Write it here. No one will read it.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Write it here. No one will read it."
+    "What's weighing on you right now?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What's weighing on you right now?"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scrivilo qui. Non lo leggerà nessuno."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa ti pesa, adesso?"
           }
         }
       }
     },
-    "breathe in": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "breathe in"
+    "Write another thought" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write another thought"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "inspira"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scrivi un altro pensiero"
           }
         }
       }
     },
-    "breathe out": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "breathe out"
+    "Write it here. No one will read it." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write it here. No one will read it."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "espira"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scrivilo qui. Non lo leggerà nessuno."
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }
