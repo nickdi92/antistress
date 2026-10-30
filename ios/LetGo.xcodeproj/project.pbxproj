@@ -12,12 +12,16 @@
 		12219E0397A84C8E7E016F6A /* LaunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F3822E6E96C96F8F325D26 /* LaunchUITests.swift */; };
 		1A2A927D8655DB6D4CE010BF /* WordLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */; };
 		24A15D516944368A22783C9F /* SinkingWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5592EF8C1796FFCC1BBA3FA /* SinkingWordTests.swift */; };
+		3607BEC29F4762DA9CC2969C /* AfterSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293695DBAE078954FF43A807 /* AfterSequence.swift */; };
 		4F6A47A7F9C9EBD3AF3236AF /* SinkingWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17543B87BEC48B7CBE3272 /* SinkingWord.swift */; };
+		6199346BAB488BA6589567D6 /* AfterSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E23CC7C30459AA335E4DF1 /* AfterSequenceTests.swift */; };
 		76FD728A578BAD02B0C7E6AF /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126E6D84346C685E55240C1 /* LocalizationTests.swift */; };
 		9B03EFD8ECF007E9F5BCF70A /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CDAC4F73A4476AB998D1B /* Easing.swift */; };
 		9B0F9F8A8C2FBBBF5910F389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D82C4BCE240F64379DA871 /* ContentView.swift */; };
 		AD0B512E82883509E825B4D7 /* WordLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8682679A0A24813BC0F0E8 /* WordLayout.swift */; };
 		B5C99BF06164776A1225754A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */; };
+		CAB0FD03A4D539602DAC91BE /* FlowModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0532A08FD0C77A3C037375AC /* FlowModelTests.swift */; };
+		D551C789B94EB4BEFBAC5601 /* FlowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF492AD5A5C0A4129304A3 /* FlowModel.swift */; };
 		D64D903A8DECD3534CF5DAC2 /* SeededRNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72AB018DF93C1014D8D8697 /* SeededRNG.swift */; };
 		F29CC186620956923345E03B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */; };
 		FA1439601935E1767F921FC0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3CB210FDB7821CA755DB250A /* Localizable.xcstrings */; };
@@ -41,10 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0532A08FD0C77A3C037375AC /* FlowModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowModelTests.swift; sourceTree = "<group>"; };
 		1A0CDAC4F73A4476AB998D1B /* Easing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		27E23CC7C30459AA335E4DF1 /* AfterSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSequenceTests.swift; sourceTree = "<group>"; };
+		293695DBAE078954FF43A807 /* AfterSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSequence.swift; sourceTree = "<group>"; };
 		2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLayoutTests.swift; sourceTree = "<group>"; };
 		3C332E272B4A23E00E1E62A8 /* LetGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetGoApp.swift; sourceTree = "<group>"; };
 		3CB210FDB7821CA755DB250A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		41CF492AD5A5C0A4129304A3 /* FlowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowModel.swift; sourceTree = "<group>"; };
 		4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		4FB91494F28A412929FE05B6 /* LetGo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LetGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
@@ -116,11 +124,21 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		9D07923664BA958F994503EF /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				293695DBAE078954FF43A807 /* AfterSequence.swift */,
+				41CF492AD5A5C0A4129304A3 /* FlowModel.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
 		B199B2E3CB6A5B3605FE6789 /* LetGo */ = {
 			isa = PBXGroup;
 			children = (
 				A29D69BF36247A3EA8A2B7E0 /* Info.plist */,
 				634C9D92E47C64916B1EF69F /* App */,
+				9D07923664BA958F994503EF /* Flow */,
 				9BEB3C6453230146D92DB95B /* Resources */,
 				3DB4A9AFB3278DCBBC67188F /* Support */,
 				B5ACB386B69A860436FD0152 /* Words */,
@@ -140,6 +158,8 @@
 		CB0298F4D23CBE2D29168CF4 /* LetGoTests */ = {
 			isa = PBXGroup;
 			children = (
+				27E23CC7C30459AA335E4DF1 /* AfterSequenceTests.swift */,
+				0532A08FD0C77A3C037375AC /* FlowModelTests.swift */,
 				8126E6D84346C685E55240C1 /* LocalizationTests.swift */,
 				C5592EF8C1796FFCC1BBA3FA /* SinkingWordTests.swift */,
 				2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */,
@@ -277,8 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3607BEC29F4762DA9CC2969C /* AfterSequence.swift in Sources */,
 				9B0F9F8A8C2FBBBF5910F389 /* ContentView.swift in Sources */,
 				9B03EFD8ECF007E9F5BCF70A /* Easing.swift in Sources */,
+				D551C789B94EB4BEFBAC5601 /* FlowModel.swift in Sources */,
 				00FFFF311454216C284F0044 /* LetGoApp.swift in Sources */,
 				4F6A47A7F9C9EBD3AF3236AF /* SinkingWord.swift in Sources */,
 				AD0B512E82883509E825B4D7 /* WordLayout.swift in Sources */,
@@ -297,6 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6199346BAB488BA6589567D6 /* AfterSequenceTests.swift in Sources */,
+				CAB0FD03A4D539602DAC91BE /* FlowModelTests.swift in Sources */,
 				76FD728A578BAD02B0C7E6AF /* LocalizationTests.swift in Sources */,
 				D64D903A8DECD3534CF5DAC2 /* SeededRNG.swift in Sources */,
 				24A15D516944368A22783C9F /* SinkingWordTests.swift in Sources */,
