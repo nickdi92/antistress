@@ -1,0 +1,9 @@
+Let Go is a small, self-contained calming app. The user writes a thought, taps "Let go", and the words sink into animated water one by one: native SwiftUI Canvas rendering, sound synthesised live with AVAudioEngine, a haptic tap for each word. A short guided breath follows.
+
+- No account or login is needed.
+- Works fully offline; the app makes no network requests.
+- Nothing typed is stored or transmitted. The only stored value is the sound on/off preference (UserDefaults).
+- No analytics, ads or third-party SDKs.
+- Localized in English and Italian (follows the device language; per-app language in iOS Settings).
+
+To try it: type any sentence, tap "Let go" and wait about 20 seconds for the sequence to finish, then tap "Write another thought". Tapping the water while writing makes a ripple; tapping during the breathing step skips to the end.
