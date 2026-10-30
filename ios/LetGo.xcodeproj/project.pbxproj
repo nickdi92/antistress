@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FFFF311454216C284F0044 /* LetGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C332E272B4A23E00E1E62A8 /* LetGoApp.swift */; };
+		07431BF690B8DB050CB902EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993A5F323A0AB4264AE335D3 /* Assets.xcassets */; };
+		12219E0397A84C8E7E016F6A /* LaunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F3822E6E96C96F8F325D26 /* LaunchUITests.swift */; };
+		76FD728A578BAD02B0C7E6AF /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126E6D84346C685E55240C1 /* LocalizationTests.swift */; };
+		9B0F9F8A8C2FBBBF5910F389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D82C4BCE240F64379DA871 /* ContentView.swift */; };
+		B5C99BF06164776A1225754A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */; };
+		F29CC186620956923345E03B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */; };
+		FA1439601935E1767F921FC0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3CB210FDB7821CA755DB250A /* Localizable.xcstrings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43E2A7363C1273D5978CE9D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C585C2EAF3AFE08BBC4A5BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7F99E75AA17D1C85C3874F3;
+			remoteInfo = LetGo;
+		};
+		ACE9D5005352DB4B9C3AEF73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C585C2EAF3AFE08BBC4A5BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7F99E75AA17D1C85C3874F3;
+			remoteInfo = LetGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C332E272B4A23E00E1E62A8 /* LetGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetGoApp.swift; sourceTree = "<group>"; };
+		3CB210FDB7821CA755DB250A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4FB91494F28A412929FE05B6 /* LetGo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LetGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		8126E6D84346C685E55240C1 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
+		993A5F323A0AB4264AE335D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A29D69BF36247A3EA8A2B7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BAC10E2BB450FFE87D7C46DE /* LetGoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LetGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D82C4BCE240F64379DA871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE20365EF84FAD24F4D61F86 /* LetGoUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LetGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F3822E6E96C96F8F325D26 /* LaunchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		20621963DED4D5789F086E8D /* LetGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4F3822E6E96C96F8F325D26 /* LaunchUITests.swift */,
+			);
+			path = LetGoUITests;
+			sourceTree = "<group>";
+		};
+		573BB603F842A59D7E7A55A3 = {
+			isa = PBXGroup;
+			children = (
+				B199B2E3CB6A5B3605FE6789 /* LetGo */,
+				CB0298F4D23CBE2D29168CF4 /* LetGoTests */,
+				20621963DED4D5789F086E8D /* LetGoUITests */,
+				D99B8CE6D9D1E54B45924E92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		634C9D92E47C64916B1EF69F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E8D82C4BCE240F64379DA871 /* ContentView.swift */,
+				3C332E272B4A23E00E1E62A8 /* LetGoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9BEB3C6453230146D92DB95B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				993A5F323A0AB4264AE335D3 /* Assets.xcassets */,
+				670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */,
+				3CB210FDB7821CA755DB250A /* Localizable.xcstrings */,
+				4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B199B2E3CB6A5B3605FE6789 /* LetGo */ = {
+			isa = PBXGroup;
+			children = (
+				A29D69BF36247A3EA8A2B7E0 /* Info.plist */,
+				634C9D92E47C64916B1EF69F /* App */,
+				9BEB3C6453230146D92DB95B /* Resources */,
+			);
+			path = LetGo;
+			sourceTree = "<group>";
+		};
+		CB0298F4D23CBE2D29168CF4 /* LetGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8126E6D84346C685E55240C1 /* LocalizationTests.swift */,
+			);
+			path = LetGoTests;
+			sourceTree = "<group>";
+		};
+		D99B8CE6D9D1E54B45924E92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FB91494F28A412929FE05B6 /* LetGo.app */,
+				BAC10E2BB450FFE87D7C46DE /* LetGoTests.xctest */,
+				EE20365EF84FAD24F4D61F86 /* LetGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52FAA8CA28ADB91ED7FF3DB1 /* LetGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83945734D0924AF495114E84 /* Build configuration list for PBXNativeTarget "LetGoTests" */;
+			buildPhases = (
+				86AC533B571B852A1D7B958F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0BAC7F0337624AC30C67AD3 /* PBXTargetDependency */,
+			);
+			name = LetGoTests;
+			packageProductDependencies = (
+			);
+			productName = LetGoTests;
+			productReference = BAC10E2BB450FFE87D7C46DE /* LetGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7F99E75AA17D1C85C3874F3 /* LetGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 059F1CBD6395C4C8CE2EF95E /* Build configuration list for PBXNativeTarget "LetGo" */;
+			buildPhases = (
+				18CF24795FFA60AD4F509052 /* Sources */,
+				E6D332A89FE0FDFAAD73950F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetGo;
+			packageProductDependencies = (
+			);
+			productName = LetGo;
+			productReference = 4FB91494F28A412929FE05B6 /* LetGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F29AD0669869A37E62712001 /* LetGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D868500DB67BA3BE5FF5FB7 /* Build configuration list for PBXNativeTarget "LetGoUITests" */;
+			buildPhases = (
+				3DCB3801F973214409FA1BC7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B234051DACC22C1754048DBD /* PBXTargetDependency */,
+			);
+			name = LetGoUITests;
+			packageProductDependencies = (
+			);
+			productName = LetGoUITests;
+			productReference = EE20365EF84FAD24F4D61F86 /* LetGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C585C2EAF3AFE08BBC4A5BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					52FAA8CA28ADB91ED7FF3DB1 = {
+						ProvisioningStyle = Automatic;
+					};
+					E7F99E75AA17D1C85C3874F3 = {
+						ProvisioningStyle = Automatic;
+					};
+					F29AD0669869A37E62712001 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = E7F99E75AA17D1C85C3874F3;
+					};
+				};
+			};
+			buildConfigurationList = E09549C2E560EF536CFACDD6 /* Build configuration list for PBXProject "LetGo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				it,
+			);
+			mainGroup = 573BB603F842A59D7E7A55A3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D99B8CE6D9D1E54B45924E92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7F99E75AA17D1C85C3874F3 /* LetGo */,
+				52FAA8CA28ADB91ED7FF3DB1 /* LetGoTests */,
+				F29AD0669869A37E62712001 /* LetGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6D332A89FE0FDFAAD73950F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07431BF690B8DB050CB902EB /* Assets.xcassets in Resources */,
+				B5C99BF06164776A1225754A /* InfoPlist.xcstrings in Resources */,
+				FA1439601935E1767F921FC0 /* Localizable.xcstrings in Resources */,
+				F29CC186620956923345E03B /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18CF24795FFA60AD4F509052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0F9F8A8C2FBBBF5910F389 /* ContentView.swift in Sources */,
+				00FFFF311454216C284F0044 /* LetGoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCB3801F973214409FA1BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12219E0397A84C8E7E016F6A /* LaunchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86AC533B571B852A1D7B958F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FD728A578BAD02B0C7E6AF /* LocalizationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B234051DACC22C1754048DBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7F99E75AA17D1C85C3874F3 /* LetGo */;
+			targetProxy = 43E2A7363C1273D5978CE9D7 /* PBXContainerItemProxy */;
+		};
+		C0BAC7F0337624AC30C67AD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7F99E75AA17D1C85C3874F3 /* LetGo */;
+			targetProxy = ACE9D5005352DB4B9C3AEF73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17A8309DF3DF54D2D283805A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetGo.app/LetGo";
+			};
+			name = Debug;
+		};
+		21B1F6494F9540B678A1C65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetGo.app/LetGo";
+			};
+			name = Release;
+		};
+		60F142D8380023930EBCFB86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6BE46E7E51F6AAC5F7C03D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LetGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo;
+				PRODUCT_NAME = LetGo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7895DF5411856D954E7A407A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9ECA8DAEEFF70E790DE9DAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LetGo;
+			};
+			name = Debug;
+		};
+		DF8A8EB63ACE2DD9A2922F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LetGo;
+			};
+			name = Release;
+		};
+		EC9B9EC865EF7F2C980A8326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LetGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.nickdi92.letgo;
+				PRODUCT_NAME = LetGo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		059F1CBD6395C4C8CE2EF95E /* Build configuration list for PBXNativeTarget "LetGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9B9EC865EF7F2C980A8326 /* Debug */,
+				6BE46E7E51F6AAC5F7C03D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5D868500DB67BA3BE5FF5FB7 /* Build configuration list for PBXNativeTarget "LetGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECA8DAEEFF70E790DE9DAEB /* Debug */,
+				DF8A8EB63ACE2DD9A2922F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83945734D0924AF495114E84 /* Build configuration list for PBXNativeTarget "LetGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A8309DF3DF54D2D283805A /* Debug */,
+				21B1F6494F9540B678A1C65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E09549C2E560EF536CFACDD6 /* Build configuration list for PBXProject "LetGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F142D8380023930EBCFB86 /* Debug */,
+				7895DF5411856D954E7A407A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C585C2EAF3AFE08BBC4A5BB /* Project object */;
+}
