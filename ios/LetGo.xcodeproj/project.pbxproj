@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00FFFF311454216C284F0044 /* LetGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C332E272B4A23E00E1E62A8 /* LetGoApp.swift */; };
+		026D45EE6EE0A90C25494BE4 /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27911710A3DDFE189E08C72B /* SoundEngine.swift */; };
 		07431BF690B8DB050CB902EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993A5F323A0AB4264AE335D3 /* Assets.xcassets */; };
 		12219E0397A84C8E7E016F6A /* LaunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F3822E6E96C96F8F325D26 /* LaunchUITests.swift */; };
 		1A2A927D8655DB6D4CE010BF /* WordLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */; };
@@ -16,8 +17,10 @@
 		4F6A47A7F9C9EBD3AF3236AF /* SinkingWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17543B87BEC48B7CBE3272 /* SinkingWord.swift */; };
 		6199346BAB488BA6589567D6 /* AfterSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E23CC7C30459AA335E4DF1 /* AfterSequenceTests.swift */; };
 		76FD728A578BAD02B0C7E6AF /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126E6D84346C685E55240C1 /* LocalizationTests.swift */; };
+		8A266D49CDD8A4BDBF81FDEB /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E18B4DBA31F928CE01C844 /* Synth.swift */; };
 		9B03EFD8ECF007E9F5BCF70A /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CDAC4F73A4476AB998D1B /* Easing.swift */; };
 		9B0F9F8A8C2FBBBF5910F389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D82C4BCE240F64379DA871 /* ContentView.swift */; };
+		9B95B68CA6BB5DF9F2AB9A90 /* SoundEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C378C0FD57B59E2E48AFA73A /* SoundEngineTests.swift */; };
 		AD0B512E82883509E825B4D7 /* WordLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8682679A0A24813BC0F0E8 /* WordLayout.swift */; };
 		B2C88892D13AA9B606A0AFA6 /* WaterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D493ADD59D3A7D3A9FF8D8 /* WaterScene.swift */; };
 		B5C99BF06164776A1225754A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */; };
@@ -26,6 +29,7 @@
 		D64D903A8DECD3534CF5DAC2 /* SeededRNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72AB018DF93C1014D8D8697 /* SeededRNG.swift */; };
 		F29CC186620956923345E03B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4283C838A5C41959BFE85AF6 /* PrivacyInfo.xcprivacy */; };
 		F4AACFE956A548488D1CB8CF /* WaterSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8FDC1EE89E5BBCD0A2EEEA /* WaterSceneTests.swift */; };
+		F9CD1A3435A1E7204AC17369 /* SynthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF7982C53ECC5406A4AF74 /* SynthTests.swift */; };
 		FA1439601935E1767F921FC0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3CB210FDB7821CA755DB250A /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +53,7 @@
 /* Begin PBXFileReference section */
 		0532A08FD0C77A3C037375AC /* FlowModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowModelTests.swift; sourceTree = "<group>"; };
 		1A0CDAC4F73A4476AB998D1B /* Easing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		27911710A3DDFE189E08C72B /* SoundEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEngine.swift; sourceTree = "<group>"; };
 		27E23CC7C30459AA335E4DF1 /* AfterSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSequenceTests.swift; sourceTree = "<group>"; };
 		293695DBAE078954FF43A807 /* AfterSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSequence.swift; sourceTree = "<group>"; };
 		2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLayoutTests.swift; sourceTree = "<group>"; };
@@ -60,13 +65,16 @@
 		670FDFF3EC4750AC5E98F9E3 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		6A8FDC1EE89E5BBCD0A2EEEA /* WaterSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSceneTests.swift; sourceTree = "<group>"; };
 		6E8682679A0A24813BC0F0E8 /* WordLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLayout.swift; sourceTree = "<group>"; };
+		73E18B4DBA31F928CE01C844 /* Synth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
 		8126E6D84346C685E55240C1 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
 		88D493ADD59D3A7D3A9FF8D8 /* WaterScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterScene.swift; sourceTree = "<group>"; };
 		993A5F323A0AB4264AE335D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A29D69BF36247A3EA8A2B7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A72AB018DF93C1014D8D8697 /* SeededRNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeededRNG.swift; sourceTree = "<group>"; };
 		AD17543B87BEC48B7CBE3272 /* SinkingWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinkingWord.swift; sourceTree = "<group>"; };
+		B3AF7982C53ECC5406A4AF74 /* SynthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthTests.swift; sourceTree = "<group>"; };
 		BAC10E2BB450FFE87D7C46DE /* LetGoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LetGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C378C0FD57B59E2E48AFA73A /* SoundEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEngineTests.swift; sourceTree = "<group>"; };
 		C5592EF8C1796FFCC1BBA3FA /* SinkingWordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinkingWordTests.swift; sourceTree = "<group>"; };
 		E8D82C4BCE240F64379DA871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE20365EF84FAD24F4D61F86 /* LetGoUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LetGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +82,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		0F16DE036ACAA60D9D3B8CFC /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				27911710A3DDFE189E08C72B /* SoundEngine.swift */,
+				73E18B4DBA31F928CE01C844 /* Synth.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		20621963DED4D5789F086E8D /* LetGoUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +167,7 @@
 			children = (
 				A29D69BF36247A3EA8A2B7E0 /* Info.plist */,
 				634C9D92E47C64916B1EF69F /* App */,
+				0F16DE036ACAA60D9D3B8CFC /* Audio */,
 				9D07923664BA958F994503EF /* Flow */,
 				9BEB3C6453230146D92DB95B /* Resources */,
 				3DB4A9AFB3278DCBBC67188F /* Support */,
@@ -175,6 +193,8 @@
 				0532A08FD0C77A3C037375AC /* FlowModelTests.swift */,
 				8126E6D84346C685E55240C1 /* LocalizationTests.swift */,
 				C5592EF8C1796FFCC1BBA3FA /* SinkingWordTests.swift */,
+				C378C0FD57B59E2E48AFA73A /* SoundEngineTests.swift */,
+				B3AF7982C53ECC5406A4AF74 /* SynthTests.swift */,
 				6A8FDC1EE89E5BBCD0A2EEEA /* WaterSceneTests.swift */,
 				2D782B3668AA9D9D00796830 /* WordLayoutTests.swift */,
 				32BA20CA40A0EC6D3654F3EE /* Support */,
@@ -317,6 +337,8 @@
 				D551C789B94EB4BEFBAC5601 /* FlowModel.swift in Sources */,
 				00FFFF311454216C284F0044 /* LetGoApp.swift in Sources */,
 				4F6A47A7F9C9EBD3AF3236AF /* SinkingWord.swift in Sources */,
+				026D45EE6EE0A90C25494BE4 /* SoundEngine.swift in Sources */,
+				8A266D49CDD8A4BDBF81FDEB /* Synth.swift in Sources */,
 				B2C88892D13AA9B606A0AFA6 /* WaterScene.swift in Sources */,
 				AD0B512E82883509E825B4D7 /* WordLayout.swift in Sources */,
 			);
@@ -339,6 +361,8 @@
 				76FD728A578BAD02B0C7E6AF /* LocalizationTests.swift in Sources */,
 				D64D903A8DECD3534CF5DAC2 /* SeededRNG.swift in Sources */,
 				24A15D516944368A22783C9F /* SinkingWordTests.swift in Sources */,
+				9B95B68CA6BB5DF9F2AB9A90 /* SoundEngineTests.swift in Sources */,
+				F9CD1A3435A1E7204AC17369 /* SynthTests.swift in Sources */,
 				F4AACFE956A548488D1CB8CF /* WaterSceneTests.swift in Sources */,
 				1A2A927D8655DB6D4CE010BF /* WordLayoutTests.swift in Sources */,
 			);
