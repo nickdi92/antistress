@@ -1,7 +1,7 @@
 # Scheda App Store — Let Go / Lascia andare
 
 Valori da inserire in App Store Connect. I testi per lingua sono nelle cartelle `en/` e `it/`
-(un file per campo), gli screenshot in `screenshots/<lingua>/`. Prima di caricarli: `bash ios/store/check.sh`.
+(un file per campo), gli screenshot in `screenshots/6.3/<lingua>/` (obbligatori, 1206×2622) e `screenshots/6.9/<lingua>/` (facoltativi). Prima di caricarli: `bash ios/store/check.sh`.
 
 ## Informazioni app
 

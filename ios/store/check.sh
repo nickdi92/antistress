@@ -30,13 +30,18 @@ it_words="cura|cure|curare|terapia|terapeutico|clinico|clinicamente|medico|distu
 grep -Eiwn "$en_words" en/*.txt review_notes.txt && fail "medical wording in the English texts (above)"
 grep -Eiwn "$it_words" it/*.txt && fail "medical wording in the Italian texts (above)"
 
-for lang in en it; do
-    for shot in 01-write 02-sinking 03-breath; do
-        f="screenshots/$lang/$shot.png"
-        [ -f "$f" ] || fail "$f is missing"
-        size=$(sips -g pixelWidth -g pixelHeight "$f" | awk '/pixel/ {print $2}' | paste -sd x -)
-        [ "$size" = "1320x2868" ] || fail "$f is $size (expected 1320x2868)"
-        strings "$f" | grep -qi c2pa && fail "$f carries a C2PA block"
+# 6.3 = "iPhone with Dynamic Island (medium display)", required; 6.9 = large display, optional
+for display in 6.3:1206x2622 6.9:1320x2868; do
+    dir=${display%%:*}
+    expected=${display#*:}
+    for lang in en it; do
+        for shot in 01-write 02-sinking 03-breath; do
+            f="screenshots/$dir/$lang/$shot.png"
+            [ -f "$f" ] || fail "$f is missing"
+            size=$(sips -g pixelWidth -g pixelHeight "$f" | awk '/pixel/ {print $2}' | paste -sd x -)
+            [ "$size" = "$expected" ] || fail "$f is $size (expected $expected)"
+            strings "$f" | grep -qi c2pa && fail "$f carries a C2PA block"
+        done
     done
 done
 

@@ -96,10 +96,11 @@ App Store Connect → la tua app → **Distribuzione** (Distribution) → versio
 1. Lingua **English (U.S.)**: copia i testi da `ios/store/en/`:
    `promotional_text.txt` → Testo promozionale, `description.txt` → Descrizione, `keywords.txt` → Parole chiave,
    `subtitle.txt` → Sottotitolo (in **Informazioni app**). URL di supporto: `https://nickdi92.github.io/antistress/support.html`.
-2. Screenshot: trascina i tre file di `ios/store/screenshots/en/` nella sezione **iPhone 6,9"**.
-   Le altre misure di iPhone vengono ricavate da queste.
+2. Screenshot: trascina i tre file di `ios/store/screenshots/6.3/en/` nella sezione obbligatoria
+   **iPhone with Dynamic Island (medium display)** (6,1"/6,3", 1206×2622). Facoltativo: i file di
+   `ios/store/screenshots/6.9/en/` in **iPhone with Dynamic Island (large display)**. Le altre misure vengono ricavate.
 3. In alto a destra, menu della lingua → **Aggiungi lingua** → **Italiano**, e ripeti con `ios/store/it/` e
-   `ios/store/screenshots/it/`. Nome in italiano: **Lascia andare** (o **Lascia andare: respira** se preso).
+   `ios/store/screenshots/6.3/it/` (e `6.9/it/`). Nome in italiano: **Lascia andare** (o **Lascia andare: respira** se preso).
 4. **Informazioni app** (App Information): categoria principale **Salute e fitness**, secondaria **Stile di vita**;
    diritti sui contenuti: nessun contenuto di terze parti.
    Il campo **Copyright** è invece nella pagina della versione 1.0 (sezione Informazioni generali):
@@ -154,6 +155,6 @@ Cosa si riusa da qui:
 - **`tools/render-icon.swift`**: icona 1024×1024 senza trasparenza da un SVG.
 - **`PrivacyInfo.xcprivacy`** e **`ITSAppUsesNonExemptEncryption = NO`** se l'app non raccoglie dati.
 - **`ios/store/check.sh`**: controllo di lunghezze dei testi, parole "mediche", misura degli screenshot.
-- **`StoreScreenshotTests`**: screenshot automatici per lingua dal simulatore 6,9".
+- **`StoreScreenshotTests`**: screenshot automatici per lingua dal simulatore (iPhone 17 per il 6,3" obbligatorio, 17 Pro Max per il 6,9").
 - **Pagine `privacy.html` / `support.html`**: stesso schema, su GitHub Pages.
 - Passi 2–9 di questa guida, nello stesso ordine.
